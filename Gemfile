@@ -35,6 +35,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
+  gem 'factory_girl_rails', '~> 4.7'
+  gem 'faker', '~> 1.6'
+
 end
 
 group :development do
@@ -45,8 +49,13 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'database_cleaner', '~> 1.5'
+end
+
 gem 'foundation-rails', '~> 5.5', '>= 5.5.3.2'
 gem 'paperclip', '~> 4.3', '>= 4.3.2'
 gem 'devise', '~> 4.1', '>= 4.1.0'
 gem 'letter_opener', '~> 1.4', '>= 1.4.1'
+gem 'cancancan', '~> 1.10'
 
