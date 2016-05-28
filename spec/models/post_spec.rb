@@ -34,6 +34,9 @@ RSpec.describe Post, type: :model do
         @post = build(:post_with_longdescription)
         expect(@post.save).to be false
       end
+      
+      #Casos
+      
 
     end
 

@@ -7,5 +7,9 @@ class User < ActiveRecord::Base
     firstname + ' ' + lastname
   end
   
+  validates :firstname, presence: true, length: { minimum: 1}
+  validates :lastname, presence: true, length: { minimum: 1}
+  validates :username, presence: true, length: { minimum: 5}
+  
   has_many :posts
 end
